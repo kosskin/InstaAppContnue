@@ -9,21 +9,41 @@
 /* Begin PBXBuildFile section */
 		BB2FBD0E29016FDE0095F545 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2FBD0D29016FDE0095F545 /* AppDelegate.swift */; };
 		BB2FBD1029016FDE0095F545 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2FBD0F29016FDE0095F545 /* SceneDelegate.swift */; };
-		BB2FBD1229016FDE0095F545 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2FBD1129016FDE0095F545 /* ViewController.swift */; };
 		BB2FBD1529016FDE0095F545 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB2FBD1329016FDE0095F545 /* Main.storyboard */; };
 		BB2FBD1729016FE20095F545 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB2FBD1629016FE20095F545 /* Assets.xcassets */; };
 		BB2FBD1A29016FE20095F545 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB2FBD1829016FE20095F545 /* LaunchScreen.storyboard */; };
+		BB8664C129017AEE00B52FC7 /* CommentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8664C029017AEE00B52FC7 /* CommentsTableViewController.swift */; };
+		BB8664C629017BE500B52FC7 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB8664C529017BE500B52FC7 /* Colors.xcassets */; };
+		BB8664CB29017EF900B52FC7 /* RequestSubscribeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8664CA29017EF900B52FC7 /* RequestSubscribeCell.swift */; };
+		BB8664CE2901903900B52FC7 /* NoticeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8664CD2901903900B52FC7 /* NoticeCell.swift */; };
+		BB8664D12901919A00B52FC7 /* Notice.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8664D02901919A00B52FC7 /* Notice.swift */; };
+		BB8664D4290198FA00B52FC7 /* CommentItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8664D3290198FA00B52FC7 /* CommentItems.swift */; };
+		BB8664D82901A6E700B52FC7 /* LikedCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8664D72901A6E700B52FC7 /* LikedCommentCell.swift */; };
+		BB8664DB2901A70400B52FC7 /* SubscribeOnYouCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8664DA2901A70400B52FC7 /* SubscribeOnYouCell.swift */; };
+		BB8664DE2901C6B700B52FC7 /* LikedComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8664DD2901C6B700B52FC7 /* LikedComment.swift */; };
+		BB8664E12901CCE600B52FC7 /* SubscribeOnYou.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8664E02901CCE600B52FC7 /* SubscribeOnYou.swift */; };
+		BB8664E52901FA1000B52FC7 /* NSMutableAttributedString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8664E42901FA1000B52FC7 /* NSMutableAttributedString+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BB2FBD0A29016FDE0095F545 /* InstaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB2FBD0D29016FDE0095F545 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB2FBD0F29016FDE0095F545 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BB2FBD1129016FDE0095F545 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BB2FBD1429016FDE0095F545 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB2FBD1629016FE20095F545 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB2FBD1929016FE20095F545 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB2FBD1B29016FE20095F545 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB8664C029017AEE00B52FC7 /* CommentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsTableViewController.swift; sourceTree = "<group>"; };
+		BB8664C529017BE500B52FC7 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		BB8664CA29017EF900B52FC7 /* RequestSubscribeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestSubscribeCell.swift; sourceTree = "<group>"; };
+		BB8664CD2901903900B52FC7 /* NoticeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeCell.swift; sourceTree = "<group>"; };
+		BB8664D02901919A00B52FC7 /* Notice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notice.swift; sourceTree = "<group>"; };
+		BB8664D3290198FA00B52FC7 /* CommentItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentItems.swift; sourceTree = "<group>"; };
+		BB8664D72901A6E700B52FC7 /* LikedCommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedCommentCell.swift; sourceTree = "<group>"; };
+		BB8664DA2901A70400B52FC7 /* SubscribeOnYouCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeOnYouCell.swift; sourceTree = "<group>"; };
+		BB8664DD2901C6B700B52FC7 /* LikedComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedComment.swift; sourceTree = "<group>"; };
+		BB8664E02901CCE600B52FC7 /* SubscribeOnYou.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeOnYou.swift; sourceTree = "<group>"; };
+		BB8664E42901FA1000B52FC7 /* NSMutableAttributedString+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +76,49 @@
 		BB2FBD0C29016FDE0095F545 /* InstaApp */ = {
 			isa = PBXGroup;
 			children = (
+				BB8664E32901F9CA00B52FC7 /* Extensions */,
 				BB2FBD0D29016FDE0095F545 /* AppDelegate.swift */,
 				BB2FBD0F29016FDE0095F545 /* SceneDelegate.swift */,
-				BB2FBD1129016FDE0095F545 /* ViewController.swift */,
 				BB2FBD1329016FDE0095F545 /* Main.storyboard */,
+				BB8664C029017AEE00B52FC7 /* CommentsTableViewController.swift */,
+				BB8664D3290198FA00B52FC7 /* CommentItems.swift */,
+				BB8664C829017C2500B52FC7 /* Cells */,
+				BB8664C329017AFB00B52FC7 /* Models */,
 				BB2FBD1629016FE20095F545 /* Assets.xcassets */,
 				BB2FBD1829016FE20095F545 /* LaunchScreen.storyboard */,
+				BB8664C529017BE500B52FC7 /* Colors.xcassets */,
 				BB2FBD1B29016FE20095F545 /* Info.plist */,
 			);
 			path = InstaApp;
+			sourceTree = "<group>";
+		};
+		BB8664C329017AFB00B52FC7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BB8664D02901919A00B52FC7 /* Notice.swift */,
+				BB8664DD2901C6B700B52FC7 /* LikedComment.swift */,
+				BB8664E02901CCE600B52FC7 /* SubscribeOnYou.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BB8664C829017C2500B52FC7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BB8664CA29017EF900B52FC7 /* RequestSubscribeCell.swift */,
+				BB8664DA2901A70400B52FC7 /* SubscribeOnYouCell.swift */,
+				BB8664CD2901903900B52FC7 /* NoticeCell.swift */,
+				BB8664D72901A6E700B52FC7 /* LikedCommentCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		BB8664E32901F9CA00B52FC7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BB8664E42901FA1000B52FC7 /* NSMutableAttributedString+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +128,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB2FBD1E29016FE20095F545 /* Build configuration list for PBXNativeTarget "InstaApp" */;
 			buildPhases = (
+				BB8664BD2901731500B52FC7 /* SwiftLint */,
 				BB2FBD0629016FDE0095F545 /* Sources */,
 				BB2FBD0729016FDE0095F545 /* Frameworks */,
 				BB2FBD0829016FDE0095F545 /* Resources */,
@@ -125,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB2FBD1A29016FE20095F545 /* LaunchScreen.storyboard in Resources */,
+				BB8664C629017BE500B52FC7 /* Colors.xcassets in Resources */,
 				BB2FBD1729016FE20095F545 /* Assets.xcassets in Resources */,
 				BB2FBD1529016FDE0095F545 /* Main.storyboard in Resources */,
 			);
@@ -132,14 +188,44 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BB8664BD2901731500B52FC7 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BB2FBD0629016FDE0095F545 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB2FBD1229016FDE0095F545 /* ViewController.swift in Sources */,
+				BB8664D4290198FA00B52FC7 /* CommentItems.swift in Sources */,
+				BB8664DE2901C6B700B52FC7 /* LikedComment.swift in Sources */,
+				BB8664E52901FA1000B52FC7 /* NSMutableAttributedString+Extension.swift in Sources */,
+				BB8664CB29017EF900B52FC7 /* RequestSubscribeCell.swift in Sources */,
 				BB2FBD0E29016FDE0095F545 /* AppDelegate.swift in Sources */,
 				BB2FBD1029016FDE0095F545 /* SceneDelegate.swift in Sources */,
+				BB8664D12901919A00B52FC7 /* Notice.swift in Sources */,
+				BB8664DB2901A70400B52FC7 /* SubscribeOnYouCell.swift in Sources */,
+				BB8664D82901A6E700B52FC7 /* LikedCommentCell.swift in Sources */,
+				BB8664C129017AEE00B52FC7 /* CommentsTableViewController.swift in Sources */,
+				BB8664E12901CCE600B52FC7 /* SubscribeOnYou.swift in Sources */,
+				BB8664CE2901903900B52FC7 /* NoticeCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
