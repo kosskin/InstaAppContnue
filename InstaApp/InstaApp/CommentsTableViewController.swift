@@ -65,14 +65,15 @@ final class CommentsTableViewController: UITableViewController {
     
     // MARK: Private Properties
     
-    private func setUpRefresher() {
-        refresher.addTarget(self, action: #selector(goRefresh), for: .valueChanged)
-        commentsTableView.addSubview(refresher)
-    }
     
     @objc private func goRefresh() {
             refresher.endRefreshing()
         }
+    
+    private func setUpRefresher() {
+        refresher.addTarget(self, action: #selector(goRefresh), for: .valueChanged)
+        commentsTableView.addSubview(refresher)
+    }
     
     private func createContents() -> [CommentItems] {
         var instaItems: [CommentItems] = []
