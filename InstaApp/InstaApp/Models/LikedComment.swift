@@ -7,7 +7,7 @@
 
 import Foundation
 
-// Describe data in NoiceCell
+/// Describe data in NoiceCell
 struct LikedComment {
     private let text: String
     private let senderPhotoName: String

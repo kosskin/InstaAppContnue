@@ -11,5 +11,4 @@ import UIKit
 final class RequestSubscribeCell: UITableViewCell {
 
     @IBOutlet private weak var requestSubscribeText: UILabel!
-    
 }

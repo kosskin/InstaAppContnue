@@ -43,8 +43,8 @@ final class SubscribeOnYouCell: UITableViewCell {
         }
     }
     
-    // MARK: Public Properties
-    
+    // MARK: Public Methods
+
     func updateData(currentSubscribe: SubscribeOnYou) {
         let (commentText, imageName, date, userName) = currentSubscribe.newSubscribeOnYou(currentSubscribe)
         

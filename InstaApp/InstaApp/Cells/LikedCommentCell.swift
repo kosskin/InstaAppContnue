@@ -14,6 +14,8 @@ final class LikedCommentCell: UITableViewCell {
     @IBOutlet private weak var senderImageView: UIImageView!
     @IBOutlet private weak var likedPhotoImageView: UIImageView!
     
+    // MARK: Public Methods
+    
     func updateData(currentLikeComment: LikedComment) {
         let (commentText, senderImage, photoImage, date, userName) =
             currentLikeComment.newLikedComment(currentLikeComment)

@@ -16,6 +16,8 @@ final class NoticeCell: UITableViewCell {
     @IBOutlet private weak var senderImageView: UIImageView!
     @IBOutlet private weak var likedPhotoImageView: UIImageView!
     
+    // MARK: Public Methods
+    
     func updateData(currentNotice: Notice) {
         let (noticeText, senderImage, likedPhotoImage, date, userName) = currentNotice.newNotice(currentNotice)
         
