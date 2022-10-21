@@ -7,8 +7,9 @@
 
 import UIKit
 
-///ss
-class SubscribeOnYouCell: UITableViewCell {
+/// Describe subscribe cell
+
+final class SubscribeOnYouCell: UITableViewCell {
     
     // MARK: Constants
     
@@ -19,13 +20,13 @@ class SubscribeOnYouCell: UITableViewCell {
 
     // MARK: IBOutlet
     
-    @IBOutlet weak var senderImageView: UIImageView!
-    @IBOutlet weak var commentTextLabel: UILabel!
-    @IBOutlet weak var subscribeButton: UIButton!
+    @IBOutlet private weak var senderImageView: UIImageView!
+    @IBOutlet private weak var commentTextLabel: UILabel!
+    @IBOutlet private weak var subscribeButton: UIButton!
     
     // MARK: IBAction
     
-    @IBAction func subscribeButtonAction(_ sender: UIButton) {
+    @IBAction private func subscribeButtonAction(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
         if sender.isSelected {
             sender.backgroundColor = UIColor(named: Constats.backgroundColor)

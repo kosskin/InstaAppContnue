@@ -7,9 +7,9 @@
 
 import UIKit
 
-/// ss
-class RequestSubscribeCell: UITableViewCell {
+/// Describe request cell
+final class RequestSubscribeCell: UITableViewCell {
 
-    @IBOutlet weak var requestSubscribeText: UILabel!
+    @IBOutlet private weak var requestSubscribeText: UILabel!
     
 }

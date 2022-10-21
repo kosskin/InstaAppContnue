@@ -44,7 +44,7 @@ final class CommentsTableViewController: UITableViewController {
     
     // MARK: IBOutlet
     
-    @IBOutlet var commentsTableView: UITableView!
+    @IBOutlet private var commentsTableView: UITableView!
     
     // MARK: UI Elements
     
@@ -54,9 +54,6 @@ final class CommentsTableViewController: UITableViewController {
     
     private let numberOfSections: [Constants.Sections] = [.today, .week]
     private lazy var contents = createContents()
-    private var currentSection = 0
-            
-    // MARK: Public Properties
 
     // MARK: Life Cycle
     
@@ -198,7 +195,7 @@ extension CommentsTableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let item = createContents()[indexPath.row]
         switch item {
-        case .requestSubscribe:
+        case .requestSubscribe where indexPath.section == 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: Constants.requestSubscribeIdentifier,
                                                      for: indexPath)
             
@@ -224,6 +221,8 @@ extension CommentsTableViewController {
             else { return UITableViewCell() }
             cell.updateData(currentSubscribe: subscribeItem)
             return cell
+        default:
+            return UITableViewCell()
         }
     }
 }

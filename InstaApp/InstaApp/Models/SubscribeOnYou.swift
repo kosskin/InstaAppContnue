@@ -7,7 +7,7 @@
 
 import Foundation
 
-// describe data in SubscribeCell
+// Describe data in SubscribeCell
 struct SubscribeOnYou {
     private let text: String
     private let senderPhotoName: String

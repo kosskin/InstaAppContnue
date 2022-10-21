@@ -7,7 +7,7 @@
 
 import Foundation
 
-// describe data in NoiceCell
+// Describe data in NoiceCell
 struct Notice {
     private let text: String
     private let senderPhotoName: String

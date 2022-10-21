@@ -7,8 +7,8 @@
 
 import UIKit
 
-/// asd
-class NoticeCell: UITableViewCell {
+/// Describe Notice cell
+final class NoticeCell: UITableViewCell {
 
     // MARK: Visual Components
     
