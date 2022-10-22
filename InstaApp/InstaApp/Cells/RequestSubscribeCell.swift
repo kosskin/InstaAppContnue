@@ -10,5 +10,7 @@ import UIKit
 /// Describe request cell
 final class RequestSubscribeCell: UITableViewCell {
 
+    // MARK: IBOutlets
+    
     @IBOutlet private weak var requestSubscribeText: UILabel!
 }

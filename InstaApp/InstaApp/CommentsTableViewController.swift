@@ -46,7 +46,7 @@ final class CommentsTableViewController: UITableViewController {
     
     @IBOutlet private var commentsTableView: UITableView!
     
-    // MARK: UI Elements
+    // MARK: Visual Components
     
     private var refresher = UIRefreshControl()
     
@@ -64,7 +64,6 @@ final class CommentsTableViewController: UITableViewController {
     }
     
     // MARK: Private Properties
-    
     
     @objc private func goRefresh() {
             refresher.endRefreshing()

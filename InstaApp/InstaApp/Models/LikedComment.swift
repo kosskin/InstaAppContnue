@@ -20,7 +20,7 @@ struct LikedComment {
         self.senderPhotoName = senderPhotoName
         self.likedPhotoName = likedPhotoName
         self.date = date
-        self.userName = name
+        userName = name
     }
     
     func newLikedComment(_ likedComment: LikedComment) -> (String, String, String, String, String) {

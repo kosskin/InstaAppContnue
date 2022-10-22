@@ -22,7 +22,7 @@ extension NSMutableAttributedString {
             .font: boldFont
         ]
         
-        self.append(NSAttributedString(string: value, attributes: attributes))
+        append(NSAttributedString(string: value, attributes: attributes))
         return self
     }
     
@@ -32,7 +32,7 @@ extension NSMutableAttributedString {
             .font: normalFont,
         ]
         
-        self.append(NSAttributedString(string: value, attributes: attributes))
+        append(NSAttributedString(string: value, attributes: attributes))
         return self
     }
 
@@ -43,8 +43,7 @@ extension NSMutableAttributedString {
             .foregroundColor: UIColor.lightGray,
         ]
         
-        self.append(NSAttributedString(string: value, attributes: attributes))
+        append(NSAttributedString(string: value, attributes: attributes))
         return self
     }
-    
 }

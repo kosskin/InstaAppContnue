@@ -10,6 +10,8 @@ import UIKit
 /// Describe request cell
 final class LikedCommentCell: UITableViewCell {
     
+    // MARK: IBOutlets
+    
     @IBOutlet private weak var commentTextLabel: UILabel!
     @IBOutlet private weak var senderImageView: UIImageView!
     @IBOutlet private weak var likedPhotoImageView: UIImageView!

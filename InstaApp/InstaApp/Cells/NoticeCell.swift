@@ -10,7 +10,7 @@ import UIKit
 /// Describe Notice cell
 final class NoticeCell: UITableViewCell {
 
-    // MARK: Visual Components
+    // MARK: OBOutlets
     
     @IBOutlet private weak var noticeTextLabel: UILabel!
     @IBOutlet private weak var senderImageView: UIImageView!

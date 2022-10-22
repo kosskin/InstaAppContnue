@@ -18,7 +18,7 @@ final class SubscribeOnYouCell: UITableViewCell {
         static let textColor = "textColor"
     }
 
-    // MARK: IBOutlet
+    // MARK: IBOutlets
     
     @IBOutlet private weak var senderImageView: UIImageView!
     @IBOutlet private weak var commentTextLabel: UILabel!
