@@ -324,14 +324,14 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="informationCell" id="OG6-Vh-2DI" customClass="InformationCell" customModule="InstaApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="124" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="124" width="414" height="135"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OG6-Vh-2DI" id="ouR-Rq-guC">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="135"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CpT-3a-9Id">
-                                            <rect key="frame" x="10" y="28" width="174" height="8"/>
+                                            <rect key="frame" x="10" y="105" width="174" height="25"/>
                                             <color key="backgroundColor" systemColor="linkColor"/>
                                             <state key="normal" title="Подписаться">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -343,7 +343,7 @@
                                             </userDefinedRuntimeAttributes>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9p2-gJ-ZOS">
-                                            <rect key="frame" x="189" y="28" width="174" height="8"/>
+                                            <rect key="frame" x="189" y="105" width="174" height="25"/>
                                             <color key="backgroundColor" name="backgroundColor"/>
                                             <state key="normal" title="Написать">
                                                 <color key="titleColor" name="textColor"/>
@@ -361,13 +361,16 @@
                                             </userDefinedRuntimeAttributes>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Здесь текст с атрибут стринг" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p9z-D9-0Z8">
-                                            <rect key="frame" x="10.5" y="0.0" width="393" height="13"/>
+                                            <rect key="frame" x="10.5" y="0.0" width="393" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="100" id="2r5-9K-Uu6"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7O-b2-tff">
-                                            <rect key="frame" x="368" y="28" width="35" height="8"/>
+                                            <rect key="frame" x="368" y="108.5" width="35" height="18"/>
                                             <color key="backgroundColor" name="backgroundColor"/>
                                             <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <state key="normal" image="chevron.down" catalog="system"/>
@@ -385,24 +388,18 @@
                                         </button>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="CpT-3a-9Id" firstAttribute="top" secondItem="p9z-D9-0Z8" secondAttribute="bottom" constant="15" id="2rM-YF-LEF"/>
-                                        <constraint firstItem="9p2-gJ-ZOS" firstAttribute="height" secondItem="ouR-Rq-guC" secondAttribute="height" multiplier="0.172414" id="3DV-tQ-y98">
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRarius">
-                                                    <integer key="value" value="5"/>
-                                                </userDefinedRuntimeAttribute>
-                                            </userDefinedRuntimeAttributes>
-                                        </constraint>
+                                        <constraint firstItem="9p2-gJ-ZOS" firstAttribute="height" secondItem="p9z-D9-0Z8" secondAttribute="height" multiplier="0.25" id="2pS-Ig-Zpa"/>
+                                        <constraint firstItem="CpT-3a-9Id" firstAttribute="top" secondItem="p9z-D9-0Z8" secondAttribute="bottom" constant="5" id="2rM-YF-LEF"/>
+                                        <constraint firstItem="CpT-3a-9Id" firstAttribute="height" secondItem="p9z-D9-0Z8" secondAttribute="height" multiplier="0.25" id="5N6-K4-f4R"/>
                                         <constraint firstItem="CpT-3a-9Id" firstAttribute="leading" secondItem="ouR-Rq-guC" secondAttribute="leading" constant="10" id="5QW-zs-ETx"/>
                                         <constraint firstItem="9p2-gJ-ZOS" firstAttribute="width" secondItem="ouR-Rq-guC" secondAttribute="width" multiplier="0.42" id="8NC-Pf-eqE"/>
                                         <constraint firstItem="p9z-D9-0Z8" firstAttribute="centerX" secondItem="ouR-Rq-guC" secondAttribute="centerX" id="AMy-na-cEM"/>
-                                        <constraint firstItem="Z7O-b2-tff" firstAttribute="height" secondItem="ouR-Rq-guC" secondAttribute="height" multiplier="0.172414" id="NYM-Yb-DIe"/>
                                         <constraint firstItem="CpT-3a-9Id" firstAttribute="width" secondItem="ouR-Rq-guC" secondAttribute="width" multiplier="0.42" id="Sfy-BP-8Kf"/>
                                         <constraint firstItem="Z7O-b2-tff" firstAttribute="width" secondItem="ouR-Rq-guC" secondAttribute="width" multiplier="0.0845411" id="WdR-Wl-SvJ"/>
-                                        <constraint firstItem="CpT-3a-9Id" firstAttribute="height" secondItem="ouR-Rq-guC" secondAttribute="height" multiplier="0.172414" id="Y78-C1-6mP"/>
-                                        <constraint firstItem="p9z-D9-0Z8" firstAttribute="height" secondItem="ouR-Rq-guC" secondAttribute="height" multiplier="0.3" id="Z2U-dU-cLh"/>
+                                        <constraint firstItem="Z7O-b2-tff" firstAttribute="height" secondItem="p9z-D9-0Z8" secondAttribute="height" multiplier="0.183333" id="XxQ-Vj-JJi"/>
                                         <constraint firstItem="9p2-gJ-ZOS" firstAttribute="centerY" secondItem="CpT-3a-9Id" secondAttribute="centerY" id="aop-wU-lAz"/>
                                         <constraint firstItem="p9z-D9-0Z8" firstAttribute="top" secondItem="ouR-Rq-guC" secondAttribute="top" id="cDS-Yc-Mv8"/>
+                                        <constraint firstAttribute="bottom" secondItem="CpT-3a-9Id" secondAttribute="bottom" constant="5" id="e0F-Yf-8oi"/>
                                         <constraint firstItem="9p2-gJ-ZOS" firstAttribute="leading" secondItem="CpT-3a-9Id" secondAttribute="trailing" constant="5" id="fmF-do-biL"/>
                                         <constraint firstItem="p9z-D9-0Z8" firstAttribute="width" secondItem="ouR-Rq-guC" secondAttribute="width" multiplier="0.95" id="gaa-JQ-DEj"/>
                                         <constraint firstItem="Z7O-b2-tff" firstAttribute="leading" secondItem="9p2-gJ-ZOS" secondAttribute="trailing" constant="5" id="tK8-2c-Lw5"/>
@@ -415,7 +412,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="actualCell" rowHeight="115" id="Pf4-n0-aR9" customClass="ActualCell" customModule="InstaApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="168" width="414" height="115"/>
+                                <rect key="frame" x="0.0" y="259" width="414" height="115"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Pf4-n0-aR9" id="nZ1-l4-dNM">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="115"/>
@@ -492,7 +489,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="photoCell" id="Yf6-yD-tx6" customClass="PhotoCell" customModule="InstaApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="283" width="414" height="1136"/>
+                                <rect key="frame" x="0.0" y="374" width="414" height="1136"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yf6-yD-tx6" id="tUP-IQ-PIo">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="1136"/>
