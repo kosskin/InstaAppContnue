@@ -63,7 +63,7 @@ final class CommentsTableViewController: UITableViewController {
         setUpRefresher()
     }
     
-    // MARK: Private Properties
+    // MARK: Private Methods
     
     @objc private func goRefresh() {
             refresher.endRefreshing()
