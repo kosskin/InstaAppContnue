@@ -21,12 +21,10 @@ final class ActualCell: UITableViewCell {
         static let stiflerText = "stifler"
     }
 
-    // MARK: LIBOutlets
+    // MARK: IBOutlets
     
     @IBOutlet private weak var actualCollecionView: UICollectionView!
-    
-    // MARK: Public Properties
-    
+        
     // MARK: Private Properties
     
     private lazy var actualItems = generateItems()
@@ -37,12 +35,7 @@ final class ActualCell: UITableViewCell {
         super.awakeFromNib()
         configUI()
     }
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
 
-    }
-    
     // MARK: Private Methods
     
     private func configUI() {

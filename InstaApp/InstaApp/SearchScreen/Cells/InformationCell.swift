@@ -30,7 +30,6 @@ final class InformationCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         configUI()
-        
     }
     
     // MARK: Private Methods

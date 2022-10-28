@@ -24,6 +24,16 @@ final class SubscribeOnYouCell: UITableViewCell {
     @IBOutlet private weak var commentTextLabel: UILabel!
     @IBOutlet private weak var subscribeButton: UIButton!
     
+    // MARK: Public Methods
+
+    func updateData(currentSubscribe: SubscribeOnYou) {
+        commentTextLabel.attributedText = NSMutableAttributedString()
+            .bold("\(currentSubscribe.userName) ")
+            .normal("\(currentSubscribe.text) ")
+            .grayColor("\(currentSubscribe.date).")
+        senderImageView.image = UIImage(named: currentSubscribe.senderPhotoName)
+    }
+    
     // MARK: IBAction
     
     @IBAction private func subscribeButtonAction(_ sender: UIButton) {
@@ -41,17 +51,5 @@ final class SubscribeOnYouCell: UITableViewCell {
             sender.setTitle("Подписаться", for: .normal)
             sender.titleLabel?.font = UIFont.systemFont(ofSize: 16)
         }
-    }
-    
-    // MARK: Public Methods
-
-    func updateData(currentSubscribe: SubscribeOnYou) {
-        let (commentText, imageName, date, userName) = currentSubscribe.newSubscribeOnYou(currentSubscribe)
-        
-        commentTextLabel.attributedText = NSMutableAttributedString()
-            .bold("\(userName) ")
-            .normal("\(commentText) ")
-            .grayColor("\(date).")
-        senderImageView.image = UIImage(named: imageName)
     }
 }

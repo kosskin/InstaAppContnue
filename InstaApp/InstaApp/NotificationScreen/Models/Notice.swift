@@ -9,21 +9,9 @@ import Foundation
 
 /// Describe data in NoiceCell
 struct Notice {
-    private let text: String
-    private let senderPhotoName: String
-    private let likedPhotoName: String
-    private let date: String
-    private let userName: String
-    
-    init(text: String, senderPhotoName: String, likedPhotoName: String, date: String, name: String) {
-        self.text = text
-        self.senderPhotoName = senderPhotoName
-        self.likedPhotoName = likedPhotoName
-        self.date = date
-        self.userName = name
-    }
-    
-    func newNotice(_ notice: Notice) -> (String, String, String, String, String) {
-        (notice.text, notice.senderPhotoName, notice.likedPhotoName, notice.date, notice.userName)
-    }
+    let text: String
+    let senderPhotoName: String
+    let likedPhotoName: String
+    let date: String
+    let userName: String
 }

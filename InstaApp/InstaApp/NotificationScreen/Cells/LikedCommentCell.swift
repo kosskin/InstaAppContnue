@@ -19,14 +19,12 @@ final class LikedCommentCell: UITableViewCell {
     // MARK: Public Methods
     
     func updateData(currentLikeComment: LikedComment) {
-        let (commentText, senderImage, photoImage, date, userName) =
-            currentLikeComment.newLikedComment(currentLikeComment)
         
         commentTextLabel.attributedText = NSMutableAttributedString()
-            .bold("\(userName) ")
-            .normal("\(commentText) ")
-            .grayColor("\(date).")
-        senderImageView.image = UIImage(named: senderImage)
-        likedPhotoImageView.image = UIImage(named: photoImage)
+            .bold("\(currentLikeComment.userName) ")
+            .normal("\(currentLikeComment.text) ")
+            .grayColor("\(currentLikeComment.date).")
+        senderImageView.image = UIImage(named: currentLikeComment.senderPhotoName)
+        likedPhotoImageView.image = UIImage(named: currentLikeComment.likedPhotoName)
     }
 }

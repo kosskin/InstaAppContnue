@@ -66,8 +66,8 @@ final class CommentsTableViewController: UITableViewController {
     // MARK: Private Methods
     
     @objc private func goRefresh() {
-            refresher.endRefreshing()
-        }
+        refresher.endRefreshing()
+    }
     
     private func setUpRefresher() {
         refresher.addTarget(self, action: #selector(goRefresh), for: .valueChanged)
@@ -81,80 +81,80 @@ final class CommentsTableViewController: UITableViewController {
                                                      senderPhotoName: Constants.twentyOneName,
                                                      likedPhotoName: Constants.stiflerName,
                                                      date: Constants.dateToday,
-                                                     name: Constants.nameOne)))
+                                                     userName: Constants.nameOne)))
         instaItems.append(CommentItems.likedComment(LikedComment(text: Constants.likedCommentText,
                                                                  senderPhotoName: Constants.euroturName,
                                                                  likedPhotoName: Constants.millersName,
                                                                  date: Constants.dateWeek,
-                                                                 name: Constants.nameThree)))
+                                                                 userName: Constants.nameThree)))
         instaItems.append(CommentItems.subscribeOnYou(SubscribeOnYou(text: Constants.subscribeOnYouText,
                                                                      senderPhotoName: Constants.zombiName,
                                                                      date: Constants.dateToday,
-                                                                     name: Constants.nameThree)))
+                                                                     userName: Constants.nameThree)))
         instaItems.append(CommentItems.likedComment(LikedComment(text: Constants.likedCommentText,
                                                                  senderPhotoName: Constants.twentyOneName,
                                                                  likedPhotoName: Constants.vpritikName,
                                                                  date: Constants.dateWeek,
-                                                                 name: Constants.nameOne)))
+                                                                 userName: Constants.nameOne)))
         instaItems.append(CommentItems.likedComment(LikedComment(text: Constants.likedCommentText,
                                                                  senderPhotoName: Constants.vpritikName,
                                                                  likedPhotoName: Constants.millersName,
                                                                  date: Constants.dateWeek,
-                                                                 name: Constants.nameTwo)))
+                                                                 userName: Constants.nameTwo)))
         instaItems.append(CommentItems.notice(Notice(text: Constants.noticeText,
                                                      senderPhotoName: Constants.zombiName,
                                                      likedPhotoName: Constants.stiflerName,
                                                      date: Constants.dateWeek,
-                                                     name: Constants.nameTwo)))
+                                                     userName: Constants.nameTwo)))
         instaItems.append(CommentItems.notice(Notice(text: Constants.noticeText,
                                                      senderPhotoName: Constants.twentyOneName,
                                                      likedPhotoName: Constants.vpritikName,
                                                      date: Constants.dateWeek,
-                                                     name: Constants.nameTwo)))
+                                                     userName: Constants.nameTwo)))
         instaItems.append(CommentItems.subscribeOnYou(SubscribeOnYou(text: Constants.subscribeOnYouText,
                                                                      senderPhotoName: Constants.zombiName,
                                                                      date: Constants.dateWeek,
-                                                                     name: Constants.nameTwo)))
+                                                                     userName: Constants.nameTwo)))
         instaItems.append(CommentItems.subscribeOnYou(SubscribeOnYou(text: Constants.subscribeOnYouText,
                                                                      senderPhotoName: Constants.millersName,
                                                                      date: Constants.dateWeek,
-                                                                     name: Constants.nameTwo)))
+                                                                     userName: Constants.nameTwo)))
         instaItems.append(CommentItems.notice(Notice(text: Constants.noticeText,
                                                      senderPhotoName: Constants.twentyOneName,
                                                      likedPhotoName: Constants.vpritikName,
                                                      date: Constants.dateWeek,
-                                                     name: Constants.nameTwo)))
+                                                     userName: Constants.nameTwo)))
         instaItems.append(CommentItems.subscribeOnYou(SubscribeOnYou(text: Constants.subscribeOnYouText,
                                                                      senderPhotoName: Constants.zombiName,
                                                                      date: Constants.dateWeek,
-                                                                     name: Constants.nameTwo)))
+                                                                     userName: Constants.nameTwo)))
         instaItems.append(CommentItems.likedComment(LikedComment(text: Constants.likedCommentText,
                                                                  senderPhotoName: Constants.euroturName,
                                                                  likedPhotoName: Constants.millersName,
                                                                  date: Constants.dateWeek,
-                                                                 name: Constants.nameTwo)))
+                                                                 userName: Constants.nameTwo)))
         instaItems.append(CommentItems.subscribeOnYou(SubscribeOnYou(text: Constants.subscribeOnYouText,
                                                                      senderPhotoName: Constants.zombiName,
                                                                      date: Constants.dateWeek,
-                                                                     name: Constants.nameTwo)))
+                                                                     userName: Constants.nameTwo)))
         instaItems.append(CommentItems.notice(Notice(text: Constants.noticeText,
                                                      senderPhotoName: Constants.twentyOneName,
                                                      likedPhotoName: Constants.vpritikName,
                                                      date: Constants.dateWeek,
-                                                     name: Constants.nameTwo)))
+                                                     userName: Constants.nameTwo)))
         instaItems.append(CommentItems.subscribeOnYou(SubscribeOnYou(text: Constants.subscribeOnYouText,
                                                                      senderPhotoName: Constants.zombiName,
                                                                      date: Constants.dateWeek,
-                                                                     name: Constants.nameTwo)))
+                                                                     userName: Constants.nameTwo)))
         instaItems.append(CommentItems.likedComment(LikedComment(text: Constants.likedCommentText,
                                                                  senderPhotoName: Constants.euroturName,
                                                                  likedPhotoName: Constants.millersName,
                                                                  date: Constants.dateWeek,
-                                                                 name: Constants.nameTwo)))
+                                                                 userName: Constants.nameTwo)))
         instaItems.append(CommentItems.subscribeOnYou(SubscribeOnYou(text: Constants.subscribeOnYouText,
                                                                      senderPhotoName: Constants.zombiName,
                                                                      date: Constants.dateWeek,
-                                                                     name: Constants.nameTwo)))
+                                                                     userName: Constants.nameTwo)))
         return instaItems
     }
 }

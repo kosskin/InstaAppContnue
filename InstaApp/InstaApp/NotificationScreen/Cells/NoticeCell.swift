@@ -10,7 +10,7 @@ import UIKit
 /// Describe Notice cell
 final class NoticeCell: UITableViewCell {
 
-    // MARK: OBOutlets
+    // MARK: IBOutlets
     
     @IBOutlet private weak var noticeTextLabel: UILabel!
     @IBOutlet private weak var senderImageView: UIImageView!
@@ -19,13 +19,11 @@ final class NoticeCell: UITableViewCell {
     // MARK: Public Methods
     
     func updateData(currentNotice: Notice) {
-        let (noticeText, senderImage, likedPhotoImage, date, userName) = currentNotice.newNotice(currentNotice)
-        
         noticeTextLabel.attributedText = NSMutableAttributedString()
-            .bold("\(userName) ")
-            .normal("\(noticeText) ")
-            .grayColor("\(date).")
-        senderImageView.image = UIImage(named: senderImage)
-        likedPhotoImageView.image = UIImage(named: likedPhotoImage)
+            .bold("\(currentNotice.userName) ")
+            .normal("\(currentNotice.text) ")
+            .grayColor("\(currentNotice.date).")
+        senderImageView.image = UIImage(named: currentNotice.senderPhotoName)
+        likedPhotoImageView.image = UIImage(named: currentNotice.likedPhotoName)
     }
 }

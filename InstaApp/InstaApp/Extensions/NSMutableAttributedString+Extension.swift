@@ -15,7 +15,7 @@ extension NSMutableAttributedString {
     private enum Constants {
         static let helveticaBoldName = "Helvetica-Bold"
         static let helveticaName = "Helvetica"
-        static let hhh = "Helvetica-Black-SemiBold"
+        static let helveticaSemiboldName = "Helvetica-Black-SemiBold"
     }
     
     var smallFontSize: CGFloat { return 12 }
@@ -28,7 +28,7 @@ extension NSMutableAttributedString {
                                            size: fontSize) ?? UIFont.systemFont(ofSize: fontSize)}
     var smallFont: UIFont { return UIFont(name: Constants.helveticaName,
                                            size: smallFontSize) ?? UIFont.systemFont(ofSize: smallFontSize)}
-    var bigFont: UIFont { return UIFont(name: Constants.hhh,
+    var bigFont: UIFont { return UIFont(name: Constants.helveticaSemiboldName,
                                            size: bigFontSize) ?? UIFont.systemFont(ofSize: bigFontSize)}
     
     func bold(_ value: String) -> NSMutableAttributedString {
